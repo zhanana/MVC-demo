@@ -46,3 +46,16 @@ $tabBar.on("click","li",(e)=>{
     .siblings().removeClass('active');
 })
 $tabBar.children().eq(0).trigger('click');
+
+const $square = $("#app3 .square")
+
+$square.on("click",()=>{
+    $square.toggleClass('active')
+})
+const $circle = $("#app4 .circle")
+
+$circle.on("mouseenter",()=>{
+    $circle.addClass('active')
+    }).on('mouseleave',()=>{
+    $circle.removeClass('active')    
+    })
